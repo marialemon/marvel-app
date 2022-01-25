@@ -9,10 +9,11 @@
 
     <SearchView
         android:id="@+id/searchView"
+        android:background="@drawable/bg_round_corners"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:queryHint="Ditto"
+        android:queryHint="Spiderman"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
