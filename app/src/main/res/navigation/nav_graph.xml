@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/characterListFragment">
+
+    <fragment
+        android:id="@+id/characterListFragment"
+        android:name="com.marianunez.marvelapp.ui.CharacterListFragment"
+        android:label="All"
+        tools:layout="@layout/fragment_character_list">
+        <action
+            android:id="@+id/action_characterListFragment_to_characterDetailActivity"
+            app:destination="@id/characterDetailActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/createSuperheroFragment"
+        android:name="com.marianunez.marvelapp.ui.CreateSuperheroFragment"
+        android:label="Create superhero"
+        tools:layout="@layout/fragment_create_superhero"></fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.marianunez.marvelapp.ui.FavoritesFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorites"></fragment>
+    <activity
+        android:id="@+id/characterDetailActivity"
+        android:name="com.marianunez.marvelapp.ui.CharacterDetailActivity"
+        android:label="activity_character_detail"
+        tools:layout="@layout/activity_character_detail" />
+
+</navigation>
